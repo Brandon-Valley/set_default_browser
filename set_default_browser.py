@@ -28,8 +28,12 @@ ext_l = [   '.htm',
 
 
 
+if __name__ == '__main__': 
+    for ext in ext_l:
+        cmd = '{} {} {}'.format(FTA_abs_path, ext, browser_prog_id)
+    #     print(cmd)
+        out = subprocess.check_output(cmd)
+    #     print(out)
 
-for ext in ext_l:
-    cmd = '{} {} {}'.format(FTA_abs_path, ext, browser_prog_id)
-    print(cmd)
-    print(subprocess.check_output(cmd))
+
+
