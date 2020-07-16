@@ -26,7 +26,9 @@ ext_l = [   'htm',
 # SetuserFTA  .url FirefoxHTML
 
 browser_str = 'FirefoxHTML'
-FTA_abs_path = 'SetUserFTA/SetUserFTA'
+FTA_abs_path = os.path.dirname(os.path.abspath(__file__)) + '//SetUserFTA//SetUserFTA'
 
 for ext in ext_l:
-    cmd = FTA 
+    cmd = '{} {} {}'.format(FTA_abs_path, ext, browser_str)
+    print(cmd)
+    subprocess.call(cmd)
