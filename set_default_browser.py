@@ -21,17 +21,11 @@ ext_l = [   '.htm',
             'RES'
         ]
 
-# SetuserFTA  http FirefoxHTML
-# SetuserFTA  https FirefoxHTML
-# SetuserFTA  .htm FirefoxHTML
-# SetuserFTA  .html FirefoxHTML
-# SetuserFTA  .url FirefoxHTML
-
-# browser_str = 'FirefoxHTML'
-browser_str = 'FirefoxHTML-308046B0AF4A39CB'
+# helpful for finding prog_id:  https://www.techwalla.com/articles/how-to-find-progi
+browser_prog_id = 'FirefoxHTML-308046B0AF4A39CB'
 FTA_abs_path = os.path.dirname(os.path.abspath(__file__)) + '//SetUserFTA//SetUserFTA'
 
 for ext in ext_l:
-    cmd = '{} {} {}'.format(FTA_abs_path, ext, browser_str)
+    cmd = '{} {} {}'.format(FTA_abs_path, ext, browser_prog_id)
     print(cmd)
     print(subprocess.check_output(cmd))
