@@ -27,7 +27,8 @@ ext_l = [   '.htm',
 # SetuserFTA  .html FirefoxHTML
 # SetuserFTA  .url FirefoxHTML
 
-browser_str = 'FirefoxHTML'
+# browser_str = 'FirefoxHTML'
+browser_str = 'FirefoxHTML-308046B0AF4A39CB'
 FTA_abs_path = os.path.dirname(os.path.abspath(__file__)) + '//SetUserFTA//SetUserFTA'
 
 for ext in ext_l:
