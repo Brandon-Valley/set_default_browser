@@ -1,16 +1,18 @@
 import subprocess
 import os
 
-ext_l = [   'htm',
-            'html',
-            'mht',
-            'mhtml',
-            'partial',
-            'svg',
-            'url',
-            'website',
-            'xht',
-            'xhtml',
+ext_l = [   '.htm',
+            '.html',
+            '.mht',
+            '.mhtml',
+            '.partial',
+            '.svg',
+            '.url',
+            '.website',
+            '.xht',
+            '.xhtml',
+            
+            # below should not have leading .
             'FTP',
             'HTTP',
             'https',
@@ -31,4 +33,4 @@ FTA_abs_path = os.path.dirname(os.path.abspath(__file__)) + '//SetUserFTA//SetUs
 for ext in ext_l:
     cmd = '{} {} {}'.format(FTA_abs_path, ext, browser_str)
     print(cmd)
-    subprocess.call(cmd)
+    print(subprocess.check_output(cmd))
