@@ -1,7 +1,7 @@
 import subprocess
 import os
 
-# helpful for finding prog_id:  https://www.techwalla.com/articles/how-to-find-progi
+# helpful for finding prog_id:  https://www.techwalla.com/articles/how-to-find-progid
 #     options:
 #        FireFox: 'FirefoxHTML-308046B0AF4A39CB'
 #        Chrome:  'ChromeHTML.GI3XCPN7GKV5EXACLTBBNILNOY'
